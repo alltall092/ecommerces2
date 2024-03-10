@@ -37,7 +37,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
- * /recientes:
+ * /api/v1/recientes:
  *   get:
  *     summary: Obtiene los productos más recientes.
  *     tags: [Products]
@@ -71,7 +71,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @swagger
- * /cart:
+ * /api/v1/cart:
  *   post:
  *     summary: Agrega un producto al carrito.
  *     tags: [Cart]
@@ -160,7 +160,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
- * /orders:
+ * /api/v1/orders:
  *   get:
  *     summary: Obtiene la lista de órdenes.
  *     tags: [Order]
@@ -171,7 +171,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
- * /deletecart/{id}:
+ * /api/v1/deletecart/{id}:
  *   delete:
  *     summary: Elimina un producto del carrito por su ID.
  *     tags: [Cart]
@@ -190,7 +190,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
- * /deletetodocart:
+ * /api/v1/deletetodocart:
  *   delete:
  *     summary: Elimina todos los productos del carrito.
  *     tags: [Cart]
