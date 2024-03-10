@@ -3,7 +3,7 @@ const sequelize = require('../utils/db');
 const Products = require('./ProductsModels');
 
 /**
- * @swagger
+ * @openapi
  * components:
  *   schemas:
  *     Order:

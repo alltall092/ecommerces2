@@ -6,14 +6,14 @@ const router=Router();
 const bodyParser=require('body-parser');
 // Routes
 /**
- * @swagger
+ * @openapi
  * tags:
  *   name: Products
  *   description: API endpoints for managing products
  */
 
 /**
- * @swagger
+ * @openapi
  * /api/v1/products:
  *   get:
  *     summary: Get all products
@@ -24,7 +24,7 @@ const bodyParser=require('body-parser');
  *         description: A list of products.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/products:
  *   post:
  *     summary: Create a new product
@@ -36,7 +36,7 @@ const bodyParser=require('body-parser');
  */
 
 /**
- * @swagger
+ * @openapi
  * /recientes:
  *   get:
  *     summary: Obtiene los productos más recientes.
@@ -46,7 +46,7 @@ const bodyParser=require('body-parser');
  *         description: Productos recientes obtenidos correctamente.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/categories:
  *   get:
  *     summary: Get all categories
@@ -58,7 +58,7 @@ const bodyParser=require('body-parser');
  *         description: A list of categories.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/cart:
  *   get:
  *     summary: Get cart items
@@ -89,7 +89,7 @@ const bodyParser=require('body-parser');
  *         description: Producto agregado correctamente al carrito.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/cart:
  *   get:
  *     summary: Obtiene el contenido del carrito.
@@ -99,7 +99,7 @@ const bodyParser=require('body-parser');
  *         description: Contenido del carrito obtenido correctamente.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/checkout:
  *   post:
  *     summary: Procesa el pago y realiza el checkout del carrito.
@@ -111,7 +111,7 @@ const bodyParser=require('body-parser');
 
 
 /**
- * @swagger
+ * @openapi
  * /api/v1/contactos:
  *   get:
  *     summary: Obtiene la lista de contactos.
@@ -121,7 +121,7 @@ const bodyParser=require('body-parser');
  *         description: Lista de contactos obtenida correctamente.
  */
 /**
- * @swagger
+ * @openapi
  * /api/v1/contact:
  *   post:
  *     summary: Agrega un nuevo contacto.
@@ -143,7 +143,7 @@ const bodyParser=require('body-parser');
  */
 
 /**
- * @swagger
+ * @openapi
  * /webhook:
  *   post:
  *     summary: Maneja los webhooks.
@@ -159,7 +159,7 @@ const bodyParser=require('body-parser');
  *         description: Webhook manejado correctamente.
  */
 /**
- * @swagger
+ * @openapi
  * /orders:
  *   get:
  *     summary: Obtiene la lista de órdenes.
@@ -170,7 +170,7 @@ const bodyParser=require('body-parser');
  */
 
 /**
- * @swagger
+ * @openapi
  * /deletecart/{id}:
  *   delete:
  *     summary: Elimina un producto del carrito por su ID.
@@ -189,7 +189,7 @@ const bodyParser=require('body-parser');
 
 
 /**
- * @swagger
+ * @openapi
  * /deletetodocart:
  *   delete:
  *     summary: Elimina todos los productos del carrito.

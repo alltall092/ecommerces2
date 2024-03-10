@@ -2,7 +2,7 @@ const db = require("../utils/db");
 const { DataTypes } = require("sequelize");
 const Categories=require('./CategoriesModels');
 /**
- * @swagger
+ * @openapi
  * components:
  *   schemas:
  *     Products:

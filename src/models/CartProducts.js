@@ -1,7 +1,7 @@
 const db=require('../utils/db');
 const {DataTypes}=require('sequelize');
 /**
- * @swagger
+ * @openapi
  * components:
  *   schemas:
  *     CartProducts:

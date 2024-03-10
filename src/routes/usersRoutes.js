@@ -2,7 +2,7 @@ const {Router }=require('express');
 const { userRegister,getAllUser}=require('../controllers');
 const router=Router();
 /**
- * @swagger
+ * @openapi
  * api/v1/register:
  *   post:
  *     summary: Registra un nuevo usuario.
@@ -25,7 +25,7 @@ const router=Router();
 
 
 /**
- * @swagger
+ * @openapi
  * api/v1/register:
  *   get:
  *     summary: Obtiene todos los usuarios registrados.
