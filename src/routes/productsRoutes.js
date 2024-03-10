@@ -14,6 +14,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /api/v1/products:
  *   get:
  *     summary: Get all products
@@ -25,6 +26,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/products:
  *   post:
  *     summary: Create a new product
@@ -37,6 +39,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /api/v1/recientes:
  *   get:
  *     summary: Obtiene los productos más recientes.
@@ -47,6 +50,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/categories:
  *   get:
  *     summary: Get all categories
@@ -59,6 +63,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/cart:
  *   get:
  *     summary: Get cart items
@@ -71,6 +76,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @swagger
+ * paths:
  * /api/v1/cart:
  *   post:
  *     summary: Agrega un producto al carrito.
@@ -90,6 +96,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/cart:
  *   get:
  *     summary: Obtiene el contenido del carrito.
@@ -100,6 +107,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/checkout:
  *   post:
  *     summary: Procesa el pago y realiza el checkout del carrito.
@@ -112,6 +120,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /api/v1/contactos:
  *   get:
  *     summary: Obtiene la lista de contactos.
@@ -122,6 +131,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/contact:
  *   post:
  *     summary: Agrega un nuevo contacto.
@@ -144,6 +154,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /webhook:
  *   post:
  *     summary: Maneja los webhooks.
@@ -160,6 +171,7 @@ const bodyParser=require('body-parser');
  */
 /**
  * @openapi
+ * paths:
  * /api/v1/orders:
  *   get:
  *     summary: Obtiene la lista de órdenes.
@@ -171,6 +183,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /api/v1/deletecart/{id}:
  *   delete:
  *     summary: Elimina un producto del carrito por su ID.
@@ -190,6 +203,7 @@ const bodyParser=require('body-parser');
 
 /**
  * @openapi
+ * paths:
  * /api/v1/deletetodocart:
  *   delete:
  *     summary: Elimina todos los productos del carrito.
@@ -198,6 +212,8 @@ const bodyParser=require('body-parser');
  *       '200':
  *         description: Todos los productos eliminados correctamente del carrito.
  */
+
+  
 router.get('/products',getProducts);
 
 router.post('/products',postProducts);
