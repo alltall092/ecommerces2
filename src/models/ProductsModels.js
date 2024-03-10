@@ -1,43 +1,7 @@
 const db = require("../utils/db");
 const { DataTypes } = require("sequelize");
 const Categories=require('./CategoriesModels');
-/**
- * @openapi
- * components:
- *   schemas:
- *     Products:
- *       type: object
- *       required:
- *         - id
- *         - titulo
- *         - price
- *         - cantidad
- *         - categoryId
- *       properties:
- *         id:
- *           type: integer
- *           format: int64
- *           description: Identificador único del producto
- *         titulo:
- *           type: string
- *           description: Título del producto
- *         description:
- *           type: string
- *           description: Descripción del producto
- *         price:
- *           type: number
- *           format: decimal
- *           description: Precio del producto
- *         image:
- *           type: string
- *           description: Ruta de la imagen del producto
- *         cantidad:
- *           type: integer
- *           description: Cantidad disponible del producto
- *         categoryId:
- *           type: integer
- *           description: Identificador de la categoría a la que pertenece el producto
- */
+
 const Products=db.define("products",{
 id:{type:DataTypes.INTEGER,
 primaryKey:true,

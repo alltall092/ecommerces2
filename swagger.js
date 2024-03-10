@@ -11,16 +11,7 @@ const options = {
     },
   },
   apis: [
-    "./src/routes/usersRoutes.js",
-    "./src/routes/authRoutes.js",
-    "./src/routes/productsRoutes.js",
-    "./src/models/userModels.js",
-    "./src/models/CategoriesModels.js",
-    "./src/models/productsModels.js",
-    "./src/models/cartModels.js",
-    "./src/models/CartProducts.js",
-    "./src/models/OrderModels.js",
-    
+  
 
   ],
 };
