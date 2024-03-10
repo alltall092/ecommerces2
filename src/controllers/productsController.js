@@ -189,7 +189,7 @@ const checkOut= async(req,res)=>{
             const product = await stripe.products.create({
                 name: itemData.titulo,
                 description: itemData.descripcion,
-                images: ['https://noticiasnodejs2.onrender.com/api/v1/noticias/imagen1.jpg'],
+                images: [itemData.url],
             });
             products.push(product);
         
